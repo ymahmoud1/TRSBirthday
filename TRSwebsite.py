@@ -54,6 +54,6 @@ if __name__ == "__main__":
     navigation = st.sidebar.selectbox("Navigate",
                                       ("Home", "Love Letters", "Love Languages",
                                        "Attention Button"))
-    st.sidebar.markdown("Daily Reminder: I LOVE YOU :Heart:")
+    st.sidebar.markdown("Daily Reminder: I LOVE YOU <3 :Heart:")
 
 

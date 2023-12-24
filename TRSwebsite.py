@@ -1,3 +1,5 @@
+import streamlit as st
+
 def welcomemessage() -> str:
     message  = " Hi 7bbti. Happy 18th birthday my lovely, sweet, intelligent, charming, beautiful, young woman.\n " \
                "I debated long and hard on what to do for your special 18th birthday and I've come to the consensus of\n " \
@@ -46,8 +48,12 @@ def category(X: int):
 
 
 if __name__ == "__main__":
-    welcomemessage()
-    pickacategorymessage()
-    X = int(input())
-    category(X)
+    # app setup
+    st.set_page_config(layout="wide")
+    st.sidebar.title("My baby's 18th Birthday <3")
+    navigation = st.sidebar.selectbox("Navigate",
+                                      ("Home", "Love Letters", "Love Languages",
+                                       "Attention Button"))
+    st.sidebar.markdown("Daily Reminder: I LOVE YOU :Heart:")
+
 

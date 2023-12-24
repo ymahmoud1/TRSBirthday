@@ -23,15 +23,15 @@ def lovelanguagesmessage() -> str:
 
 def picklovelanguage(X:str):
     if X == "Act of Service":
-        return print("Act of Service picked!")
+        return "Act of Service picked!"
     elif X== "Quality Time":
-        return print("Quality Time picked!")
+        return "Quality Time picked!"
     elif X== "Gifts":
-        return print("Gifts picked!")
+        return "Gifts picked!"
     elif X=="Physical Touch":
-        return print("Physical Touch picked!")
+        return "Physical Touch picked!"
     else:
-        return print("Words of Affirmation picked!")
+        return "Words of Affirmation picked!"
 
 def category(X: int):
     if X == 1:

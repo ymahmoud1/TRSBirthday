@@ -10,7 +10,7 @@ def welcomemessage() -> str:
                "be thinking of how grateful I am of you for the whole duration of my journey back to the USA and for all the motnhs\n " \
                "I will be spending there until I can be blessed by being near your presence again in the summer. I love you, appreciate you,\n " \
                "and I am proud of all that you have achieved in the 18 years you've lived so far my little bug my little bug, happy birthday :)\n"
-    return print(message)
+    return message
 
 def pickacategorymessage() -> str:
     message = "Pick a category!\n1. Messages from loved ones\n2.Love Languages\n3.Attention Button"
@@ -21,14 +21,14 @@ def lovelanguagesmessage() -> str:
               "\n3.Gifts\n4.Physical Touch\n5.Words of Affirmation"
     return print(message)
 
-def picklovelanguage(X:int):
-    if X == 1:
+def picklovelanguage(X:str):
+    if X == "Act of Service":
         return print("Act of Service picked!")
-    elif X==2:
+    elif X== "Quality Time":
         return print("Quality Time picked!")
-    elif X==3:
+    elif X== "Gifts":
         return print("Gifts picked!")
-    elif X==4:
+    elif X=="Physical Touch":
         return print("Physical Touch picked!")
     else:
         return print("Words of Affirmation picked!")
@@ -50,10 +50,25 @@ def category(X: int):
 if __name__ == "__main__":
     # app setup
     st.set_page_config(layout="wide")
-    st.sidebar.title("My baby's 18th Birthday <3")
+    st.sidebar.title("My Baby's 18th Birthday <3")
     navigation = st.sidebar.selectbox("Navigate",
                                       ("Home", "Love Letters", "Love Languages",
                                        "Attention Button"))
-    st.sidebar.markdown("Daily Reminder: I LOVE YOU <3 :Heart:")
+    st.sidebar.markdown("Daily Reminder: I LOVE YOU ❤️❤️❤️️")
 
+    #Home page
+    if navigation == "Home":
+        st.title("Happy 18th Birthday My Little Bug")
+        st.markdown(welcomemessage())
+
+    #Love Letters
+    elif navigation == "Love Letters":
+        st.title("Letters From Your Loved Ones")
+
+    #LoveLanguages
+    elif navigation == "Love Languages":
+        st.title("What Type of Love Do you Want Right Now?")
+        language = st.selectbox("Pick whichever you want and I will provide :)",
+                     ["Act of Service","Quality Time","Gifts","Physical Touch","Words of Affirmation"])
+        st.markdown(picklovelanguage(language))
 

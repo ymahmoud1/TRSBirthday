@@ -64,12 +64,12 @@ if __name__ == "__main__":
     #Love Letters
     elif navigation == "Love Letters":
         st.title("Letters From Your Loved Ones")
-        letter = st.selectbox("Whose love/birthday letter would you like to read?", ["Yazan", "Zeina", "Haya", "Yasemine"])
+        letter = st.selectbox("**Whose love/birthday letter would you like to read?**", ["Yazan", "Zeina", "Haya", "Yasemine"])
 
     #Love Languages
     elif navigation == "Love Languages":
         st.title("What Type of Love Do you Want Right Now?")
-        language = st.selectbox("Pick whichever you want and I will provide :)",
+        language = st.selectbox("**Pick whichever you want and I will provide :)**",
                      ["Act of Service","Quality Time","Gifts","Physical Touch","Words of Affirmation"])
         st.markdown(picklovelanguage(language))
 

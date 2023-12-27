@@ -27,7 +27,8 @@ def picklovelanguage(X:str):
     elif X== "Quality Time":
         return "Quality Time picked!"
     elif X== "Gifts":
-        return "Gifts picked!"
+        st.markdown("**Click on the link below to redirect you to a special page**")
+        st.link_button("Gift Giving", "https://forms.gle/4iHQvV8KqS5Nyoj17")
     elif X=="Physical Touch":
         return "Physical Touch picked!"
     else:
@@ -72,4 +73,5 @@ if __name__ == "__main__":
         language = st.selectbox("**Pick whichever you want and I will provide :)**",
                      ["Act of Service","Quality Time","Gifts","Physical Touch","Words of Affirmation"])
         st.markdown(picklovelanguage(language))
+
 

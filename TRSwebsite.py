@@ -64,7 +64,7 @@ if __name__ == "__main__":
     #Love Letters
     elif navigation == "Love Letters":
         st.title("Letters From Your Loved Ones")
-        letter = st.selectbox("Whose love/birthday letter would you like to read?", ["Yazan", "Zeina", "Haya", "Yasemine", "Taqwa"])
+        letter = st.selectbox("Whose love/birthday letter would you like to read?", ["Yazan", "Zeina", "Haya", "Yasemine"])
 
     #Love Languages
     elif navigation == "Love Languages":

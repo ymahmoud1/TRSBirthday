@@ -29,6 +29,7 @@ def picklovelanguage(X:str):
     elif X== "Gifts":
         st.markdown("**Click on the link below to redirect you to a special page**")
         st.link_button("Gift Giving", "https://forms.gle/4iHQvV8KqS5Nyoj17")
+        return ""
     elif X=="Physical Touch":
         return "Physical Touch picked!"
     else:

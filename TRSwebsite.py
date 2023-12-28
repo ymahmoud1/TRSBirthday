@@ -25,7 +25,7 @@ def picklovelanguage(X:str):
     if X == "Act of Service":
         return "Act of Service picked!"
     elif X== "Quality Time":
-        st.markdown("Quality Time picked!")
+        st.markdown("**Quality Time picked!**")
         st.markdown("For Quality Time, I thought its about time we make a shared calendar!"
                     " This should hopefully help ease the time complexities of being in a 9 hour time difference long distance relationship.\n"
                     "My class times, work schedule, and other responsibilities are all already on there, so please go ahead and add your class times, counseling appointments, therapy, etc.\n"
@@ -37,6 +37,9 @@ def picklovelanguage(X:str):
         st.markdown(" 1. Click on the button labelled 'Our Calendar' below.  \n2. Log-in with your google account, and then click on the 'Create' tab and then on event.")
         image1 = Image.open('./Images/step2.jpg')
         st.image(image1)
+        st.markdown("3. Add a title for the event. Then pick a time and date.  \nIf you want the event to be a daily/weekly/bi-weekly thing, then click on the time slot and make it repeatable!")
+        image2 = Image.open('./Images/step3.jpg')
+        st.image(image2)
         st.markdown("**Click on the link below to redirect you to our calendar**")
         st.link_button("Our Calendar", "https://calendar.google.com/calendar/u/1?cid=NmMzZDc1OGExMWZjODVhZjVmN2QyMDlkNzdhODBlYWRlMmM1YTkzMzA4NzdiYmFkMTVhY2NhYzQ0OTU0YWU1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t")
         return ""

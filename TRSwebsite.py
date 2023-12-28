@@ -34,8 +34,8 @@ def picklovelanguage(X:str):
                     "I would also recommend downloading the Google Calendar App on your phone to always have our schedule on you.\n "
                     "Anyways, that's enough talking from me, I hope you enjoy!")
         st.markdown("Steps to make an event:  \n1. Click on the button labelled 'Our Calendar' below.  \n2. Log-in with your google account, and then click on the 'Create' tab and then on event.")
-        image = Image.open('./Images/step2/')
-        st.image(image)
+        image1 = Image.open('./Images/step2/')
+        st.image(image1)
         st.markdown("**Click on the link below to redirect you to our calendar**")
         st.link_button("Our Calendar", "https://calendar.google.com/calendar/u/1?cid=NmMzZDc1OGExMWZjODVhZjVmN2QyMDlkNzdhODBlYWRlMmM1YTkzMzA4NzdiYmFkMTVhY2NhYzQ0OTU0YWU1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t")
         return ""

@@ -25,7 +25,15 @@ def picklovelanguage(X:str):
     if X == "Act of Service":
         return "Act of Service picked!"
     elif X== "Quality Time":
-        st.markdown("Quality Time picked!\n**Click on the link below to redirect you to our calendar :)**")
+        st.markdown("Quality Time picked!")
+        st.markdown("For Quality Time, I thought its about time we make a shared calendar!"
+                    "This should hopefully help ease the time complexities of being in a 9 hour time difference long distance relationship.\n"
+                    "My class times, work schedule, and other responsibilities are all already on there, so please go ahead and add your class times, counseling appointments, therapy, etc.\n"
+                    "This calendar is also for you to request stricter tala times, days in advance, so that I make sure to have no obligations in that time slot.\n"
+                    "For example, if you want us to watch a certain movie or a show soon, just add an event and I'll be notified of it!\n"
+                    "I would also recommend downloading the Google Calendar App on your phone to always have our schedule on you.\n "
+                    "Anyways, that's enough talking from me, I hope you enjoy!")
+        st.markdown("**Click on the link below to redirect you to our calendar**")
         st.link_button("Our Calendar", "https://calendar.google.com/calendar/u/1?cid=NmMzZDc1OGExMWZjODVhZjVmN2QyMDlkNzdhODBlYWRlMmM1YTkzMzA4NzdiYmFkMTVhY2NhYzQ0OTU0YWU1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t")
         return ""
     elif X== "Gifts":

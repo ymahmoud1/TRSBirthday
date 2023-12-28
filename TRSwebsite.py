@@ -38,8 +38,12 @@ def picklovelanguage(X:str):
         image1 = Image.open('./Images/step2.jpg')
         st.image(image1)
         st.markdown("3. Add a title for the event. Then pick a time and date.  \nIf you want the event to be a daily/weekly/bi-weekly thing, then click on the time slot and make it repeatable!")
+        st.markdown("4. Add a description if you wanna be cute.")
         image2 = Image.open('./Images/step3.jpg')
         st.image(image2)
+        st.markdown("4.Make sure it says 'Our Calendar' and not any other calendar at the bottom! If it does just click on it and switch it.")
+        image3 = Image.open("./Images/step4.jpg")
+        st.image(image3)
         st.markdown("**Click on the link below to redirect you to our calendar**")
         st.link_button("Our Calendar", "https://calendar.google.com/calendar/u/1?cid=NmMzZDc1OGExMWZjODVhZjVmN2QyMDlkNzdhODBlYWRlMmM1YTkzMzA4NzdiYmFkMTVhY2NhYzQ0OTU0YWU1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t")
         return ""

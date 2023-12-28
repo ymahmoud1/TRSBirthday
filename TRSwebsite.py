@@ -25,9 +25,11 @@ def picklovelanguage(X:str):
     if X == "Act of Service":
         return "Act of Service picked!"
     elif X== "Quality Time":
-        return "Quality Time picked!"
+        st.markdown("Quality Time picked!\n**Click on the link below to redirect you to our calendar :)**")
+        st.link_button("Our Calendar", "https://calendar.google.com/calendar/u/1?cid=NmMzZDc1OGExMWZjODVhZjVmN2QyMDlkNzdhODBlYWRlMmM1YTkzMzA4NzdiYmFkMTVhY2NhYzQ0OTU0YWU1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t")
+        return ""
     elif X== "Gifts":
-        st.markdown("**Click on the link below to redirect you to a special page**")
+        st.markdown("Gifts Picked!\n**Click on the link below to redirect you to a special page**")
         st.link_button("Gift Giving", "https://forms.gle/4iHQvV8KqS5Nyoj17")
         return ""
     elif X=="Physical Touch":

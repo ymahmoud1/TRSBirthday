@@ -23,7 +23,20 @@ def lovelanguagesmessage() -> str:
 
 def picklovelanguage(X:str):
     if X == "Act of Service":
-        return "Act of Service picked!"
+        st.markdown("**Acts of Service picked!**")
+        st.markdown("Acts of service along with physical touch are probably the two hardest love languages to show through long distance, but ones that I enjoy giving you the most of.  \n"
+                    "I want to do anything possible to make your life easier, whether it is to put your socks on, tie your shoe laces for you, give you a massage for your neck, right shoulder and back after sa long day, etc.  \n"
+                    "I wish I could be there to provide you any sort of service to alleviate your stress, make you feel more at home, and just reset you back to factory settings of comfort.  \n"
+                    "However, I have brainstormed a few ways that I will be making sure that I am doing the utmost I can in helping you out/removing things from your plate galbi. Here are a few:  \n"
+                    "1. Help you out with any math related, statistical related, or logical related problem you might have and are looking for solutions to.  \n"
+                    "2. Instead of providing solutions to problems, if you just want me to listen, I can do that instead too  \n"
+                    "3. Helping you stick to a schedule, remind you of things you have going on, deadlines, and more.  \n"
+                    "4. Surprise you with some of your favorite foods/snacks after a long day (I know where you live, not in a creepy way).  \n"
+                    "5. Bi-Weekly spotify playlist of a compilation of songs that remind me of you and my love for you.  \n"
+                    "6. Hour long monologue about how special you are, and how much of an amazing person and girlfriend you are, and how grateful I am for you (Hour is not enough).  \n"
+                    "7. More that I won't tell you and instead surprise you with")
+        st.markdown("I've listed these things, so that you have some quick ideas if you are craving or feeling an acts of service love language day.")
+        return ""
     elif X== "Quality Time":
         st.markdown("**Quality Time picked!**")
         st.markdown("For Quality Time, I thought its about time we make a shared calendar!"

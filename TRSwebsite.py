@@ -75,6 +75,7 @@ def picklovelanguage(X:str):
             f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
             unsafe_allow_html=True,
         )
+        st.markdown("^this you hehe")
         st.markdown("**Click on the link below to redirect you to a special page**")
         st.link_button("Gift Giving", "https://forms.gle/4iHQvV8KqS5Nyoj17")
         return ""

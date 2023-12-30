@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import base64
 def welcomemessage() -> str:
     message  = " Hi 7bbti. Happy 18th birthday my lovely, sweet, intelligent, charming, beautiful, young woman.\n " \
                "I debated long and hard on what to do for your special 18th birthday and I've come to the consensus of\n " \
@@ -65,7 +66,16 @@ def picklovelanguage(X:str):
             st.link_button("Our Calendar", "https://calendar.google.com/calendar/u/1?cid=NmMzZDc1OGExMWZjODVhZjVmN2QyMDlkNzdhODBlYWRlMmM1YTkzMzA4NzdiYmFkMTVhY2NhYzQ0OTU0YWU1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t")
         return ""
     elif X== "Gifts":
-        st.markdown("Gifts Picked!\n**Click on the link below to redirect you to a special page**")
+        st.markdown("Gifts Picked!")
+        file_ = open("./Images/catgift.gif", "rb")
+        contents = file_.read()
+        data_url = base64.b64encode(contents).decode("utf-8")
+        file_.close()
+        st.markdown(
+            f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+            unsafe_allow_html=True,
+        )
+        st.markdown("**Click on the link below to redirect you to a special page**")
         st.link_button("Gift Giving", "https://forms.gle/4iHQvV8KqS5Nyoj17")
         return ""
     elif X=="Physical Touch":

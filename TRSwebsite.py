@@ -133,14 +133,6 @@ def picklovelanguage(X:str):
     else:
         st.markdown("**Words of Affirmation picked!**")
         st.markdown("You deserve to know how special you are. Sometimes, as people do, we can get in our head, or get caught up in life, and forget who we are.  \nSo, I dedicate this page to remind you of the lovely person you are Tala Raed Sater.")
-        file_ = open("./Images/lovecat.gif", "rb")
-        contents = file_.read()
-        data_url = base64.b64encode(contents).decode("utf-8")
-        file_.close()
-        st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" alt="">',
-            unsafe_allow_html=True,
-        )
         lcol, mcol, rcol = st.columns([1,1,1])
         with lcol:
             st.markdown("If you're stressed and work is causing you migraines, use this button:")
@@ -195,6 +187,15 @@ def picklovelanguage(X:str):
                                "My favorite girl.", "My sweet, lovely girlfriend.", "You're the love of my life.", "You are mine forever.", "My little squish."]
                 statement = random.choice(list_oftala)
                 st.write(statement + " <3")
+
+        file_ = open("./Images/lovecat.gif", "rb")
+        contents = file_.read()
+        data_url = base64.b64encode(contents).decode("utf-8")
+        file_.close()
+        st.markdown(
+            f'<img src="data:image/gif;base64,{data_url}" alt="">',
+            unsafe_allow_html=True,
+        )
 
         return ""
 

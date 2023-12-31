@@ -1,3 +1,5 @@
+import random
+
 import streamlit as st
 from PIL import Image
 import base64
@@ -129,7 +131,24 @@ def picklovelanguage(X:str):
             st.image(image12)
         return ""
     else:
-        return "Words of Affirmation picked!"
+        st.markdown("**Words of Affirmation picked!**")
+        lcol, mcol, rcol = st.columns([1,1,1])
+        with lcol:
+            st.markdown("When stress and work are cuasing you migraines, use this button:")
+            support_button = st.button("Click Me!")
+            if support_button:
+                list_of_support = ["My baby you're doing amazing", "Keep it up 7ub!", "7bbti there is no other like you",
+                                   "You're such a hard worker my love", "You're doing great 7ayati", "I believe in you my baby",
+                                   "Your hard work, determination and passion will always be seen and valued by me qalbi",
+                                   "My smart little nerd, you've got this", "My **FOUR** A stars girlfriend", "You're the most intelligent girl I know",
+                                   "My baby is the brightest little bug", "I'm so proud of everything that you've accomplished so far",
+                                   "All your accomplishments are seen by me", "I can't wait to spend the rest of my life celebrating your accomplishments with you",
+                                   "Dont forget that you are the reason for your successes and no one else", "My future surgeon wife",
+                                   "All the work you're putting in will go to our kids telling the other kids that their mum is a doctor inshallah",
+                                   "I'm always here for you if you need to rest and recharge"]
+                statement = random.choice(list_of_support)
+                st.write(statement)
+        return ""
 
 def category(X: int):
     if X == 1:

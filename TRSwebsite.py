@@ -112,8 +112,9 @@ def picklovelanguage(X:str):
             image11 = Image.open("./Images/Tpic8.JPG")
             st.image(image11)
         with newcol3:
-            image12 = Image.open("./Images/Tpic9.JPG")
-            st.image(image12)
+            image7 = Image.open("./Images/Tpic4.jpg")
+            image7rotate = image7.rotate(180)
+            st.image(image7rotate)
             image13 = Image.open("./Images/Tpic10.JPG")
             st.image(image13)
             file_ = open("./Images/Tgif1.gif", "rb")
@@ -124,10 +125,8 @@ def picklovelanguage(X:str):
                 f'<img src="data:image/gif;base64,{data_url}" alt="">',
                 unsafe_allow_html=True,
             )
-            image7 = Image.open("./Images/Tpic4.jpg")
-            image7rotate = image7.rotate(180)
-            st.image(image7rotate)
-
+            image12 = Image.open("./Images/Tpic9.JPG")
+            st.image(image12)
         return ""
     else:
         return "Words of Affirmation picked!"

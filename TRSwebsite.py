@@ -183,6 +183,8 @@ def picklovelanguage(X:str):
                                "You are my strong baby, strongest woman out there", "My funny bitch", "Who knew someone so amazing could be packed in a tiny 5'2 Woman.",
                                "Mako A7la minitch bil 7aya", "You're crazy, and I love crazy.", "My princess with a disorder.", "There is no soul kinder than yours.",
                                "My favorite girl.", "My sweet, lovely girlfriend.", "You're the love of my life.", "You are mine forever.", "My little squish."]
+                statement = random.choice(list_oftala)
+                st.write(statement + " <3")
 
         return ""
 

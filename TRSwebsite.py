@@ -134,20 +134,38 @@ def picklovelanguage(X:str):
         st.markdown("**Words of Affirmation picked!**")
         lcol, mcol, rcol = st.columns([1,1,1])
         with lcol:
-            st.markdown("When stress and work are cuasing you migraines, use this button:")
+            st.markdown("If you're stressed and work is causing you migraines, use this button:")
             support_button = st.button("Click Me!")
             if support_button:
-                list_of_support = ["My baby you're doing amazing", "Keep it up 7ub!", "7bbti there is no other like you",
-                                   "You're such a hard worker my love", "You're doing great 7ayati", "I believe in you my baby",
-                                   "Your hard work, determination and passion will always be seen and valued by me qalbi",
-                                   "My smart little nerd, you've got this", "My **FOUR** A stars girlfriend", "You're the most intelligent girl I know",
-                                   "My baby is the brightest little bug", "I'm so proud of everything that you've accomplished so far",
-                                   "All your accomplishments are seen by me", "I can't wait to spend the rest of my life celebrating your accomplishments with you",
-                                   "Dont forget that you are the reason for your successes and no one else", "My future surgeon wife",
-                                   "All the work you're putting in will go to our kids telling the other kids that their mum is a doctor inshallah",
-                                   "I'm always here for you if you need to rest and recharge"]
+                list_of_support = ["My baby you're doing amazing.", "Keep it up 7ub!", "7bbti there is no other like you.",
+                                   "You're such a hard worker my love.", "You're doing great 7ayati.", "I believe in you my baby.",
+                                   "Your hard work, determination and passion will always be seen and valued by me qalbi.",
+                                   "My smart little nerd, you've got this.", "My **FOUR** A stars girlfriend.", "You're the most intelligent girl I know.",
+                                   "My baby is the brightest little bug.", "I'm so proud of everything that you've accomplished so far.",
+                                   "All your accomplishments are seen by me.", "I can't wait to spend the rest of my life celebrating your accomplishments with you.",
+                                   "Dont forget that you are the reason for your successes and no one else.", "My future surgeon wife.",
+                                   "All the work you're putting in will go to our kids telling the other kids that their mum is a doctor inshallah.",
+                                   "I'm always here for you if you need to rest and recharge.", "Here is a **BIIIIG** hug for all the hard work you've put in."]
                 statement = random.choice(list_of_support)
-                st.write(statement)
+                st.write(statement + " <3")
+        with mcol:
+            st.markdown("If you're feeling yourself or wanna be hyped, use this button:")
+            sexy_button = st.button("Touch me ;)")
+            if sexy_button:
+                list_sexywords = ["Fuck me you're gorgeous.", "You're smoking hot GOD DAMN.", "You're beautiful brown eyes, wheres the nearest tree?",
+                                  "The sexiest woman in planet fucking Earth.", "I will die for your curves", "That hourglass figure of yours fuck me.",
+                                  "Your smile enchants me every single time", "Perfect face, perfect body, i can't wait to ruin them.",
+                                  "Goddess, you're a literal goddess, body and face, my god.", "Skin is glowing, always so clean, so smooth.",
+                                  "The things I want to do to you, I'm going to hell for these thoughts.", "Slim thick, thats my baby.",
+                                  "Look at that itty bitty waist AND thick thighs OH MY GOD.", "How did i get so lucky to end up with a goddess?",
+                                  "Are you Aphrodite's daughter and I just haven't found out yet?", "My sexy Arabian princess.",
+                                  "I cant wait to bruise that beautiful skin of yours.", "Your ass is to die for, I'm not kididng.",
+                                  "You've got the most beautiful complexion I've ever laid my eyes on.", "That ass so fiiiiiiineee.",
+                                  "Your ass deserves some spanking for looking that good.", "You've got the most beautiful set of tits.",
+                                  "My darling your eyes sparkle at night.", "I will ruin your perfect mouth and beautiful lips.", "My baby is so beautiful I cant.",
+                                  "The prettiest girl ever, and shes mine."]
+                statement = random.choice(list_sexywords)
+                st.write(statement +" <3")
         return ""
 
 def category(X: int):

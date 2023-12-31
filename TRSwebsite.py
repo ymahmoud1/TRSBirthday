@@ -86,15 +86,24 @@ def picklovelanguage(X:str):
         newcol1, newcol2, newcol3 = st.columns([1,1,1])
         with newcol1:
             image4 = Image.open("./Images/Tpic1.jpg")
+            image4 = image4.rotate(180)
             st.image(image4)
             image5 = Image.open("./Images/Tpic2.JPG")
             st.image(image5)
             image6 = Image.open("./Images/Tpic3.jpg")
+            image6=image6.rotate(180)
             st.image(image6)
-            image7 = Image.open("./Images/Tpic4.jpg")
-            st.image(image7)
+            file_ = open("./Images/Tgif2.gif", "rb")
+            contents = file_.read()
+            data_url = base64.b64encode(contents).decode("utf-8")
+            file_.close()
+            st.markdown(
+                f'<img src="data:image/gif;base64,{data_url}" alt="">',
+                unsafe_allow_html=True,
+            )
         with newcol2:
             image8 = Image.open("./Images/Tpic5.jpg")
+            image8=image8.rotate(180)
             st.image(image8)
             image9 = Image.open("./Images/Tpic6.JPG")
             st.image(image9)
@@ -115,14 +124,10 @@ def picklovelanguage(X:str):
                 f'<img src="data:image/gif;base64,{data_url}" alt="">',
                 unsafe_allow_html=True,
             )
-            file_ = open("./Images/Tgif2.gif", "rb")
-            contents = file_.read()
-            data_url = base64.b64encode(contents).decode("utf-8")
-            file_.close()
-            st.markdown(
-                f'<img src="data:image/gif;base64,{data_url}" alt="">',
-                unsafe_allow_html=True,
-            )
+            image7 = Image.open("./Images/Tpic4.jpg")
+            image7rotate = image7.rotate(180)
+            st.image(image7rotate)
+
         return ""
     else:
         return "Words of Affirmation picked!"

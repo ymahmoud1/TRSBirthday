@@ -239,4 +239,9 @@ if __name__ == "__main__":
                      ["Act of Service","Quality Time","Gifts","Physical Touch","Words of Affirmation"])
         st.markdown(picklovelanguage(language))
 
-
+    #Attention Button
+    elif navigation == "Attention Button" :
+        st.title("Press The Button Below For Attention!!!")
+        thebutton = st.button("The Attention Button")
+        if thebutton:
+            st.markdown("**Attention Button still in the works, so go and bug real Yazan.**")

@@ -167,7 +167,7 @@ def picklovelanguage(X:str):
                                   "The prettiest girl ever, and shes mine."]
                 statement = random.choice(list_sexywords)
                 st.write(statement +" <3")
-                file_ = open("./Images/catgif.gif", "rb")
+                file_ = open("./Images/lovecat.gif", "rb")
                 contents = file_.read()
                 data_url = base64.b64encode(contents).decode("utf-8")
                 file_.close()

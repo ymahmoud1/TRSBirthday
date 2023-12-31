@@ -132,7 +132,7 @@ def picklovelanguage(X:str):
         return ""
     else:
         st.markdown("**Words of Affirmation picked!**")
-        st.markdown("You deserve to know how special you are. Sometimes you can get in your head, or get caught up in life, and forget who you are.  \nSo, I dedicate this page to remind you of the lovely person you are Talaa Raed Sater.")
+        st.markdown("You deserve to know how special you are. Sometimes, as people do, we can get in our head, or get caught up in life, and forget who we are.  \nSo, I dedicate this page to remind you of the lovely person you are Talaa Raed Sater.")
         lcol, mcol, rcol = st.columns([1,1,1])
         with lcol:
             st.markdown("If you're stressed and work is causing you migraines, use this button:")

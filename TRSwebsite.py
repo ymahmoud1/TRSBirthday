@@ -66,13 +66,13 @@ def picklovelanguage(X:str):
             st.link_button("Our Calendar", "https://calendar.google.com/calendar/u/1?cid=NmMzZDc1OGExMWZjODVhZjVmN2QyMDlkNzdhODBlYWRlMmM1YTkzMzA4NzdiYmFkMTVhY2NhYzQ0OTU0YWU1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t")
         return ""
     elif X== "Gifts":
-        st.markdown("Gifts Picked!")
+        st.markdown("**Gifts Picked!**")
         file_ = open("./Images/catgift.gif", "rb")
         contents = file_.read()
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
         st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+            f'<img src="data:image/gif;base64,{data_url}" alt="">',
             unsafe_allow_html=True,
         )
         st.markdown("^this you hehe")
@@ -80,7 +80,50 @@ def picklovelanguage(X:str):
         st.link_button("Gift Giving", "https://forms.gle/4iHQvV8KqS5Nyoj17")
         return ""
     elif X=="Physical Touch":
-        return "Physical Touch picked!"
+        st.markdown("**Physical Touch picked!**")
+        st.markdown("Physical touch is near impossible to work out through long distance.  \n "
+                    "So, if you ever feel like receiving it, here are some pictures of us engaging in this beautiful love language.")
+        newcol1, newcol2, newcol3 = st.columns([1,1,1])
+        with newcol1:
+            image4 = Image.open("./Images/Tpic1.jpg")
+            st.image(image4)
+            image5 = Image.open("./Images/Tpic2.JPG")
+            st.image(image5)
+            image6 = Image.open("./Images/Tpic3.jpg")
+            st.image(image6)
+            image7 = Image.open("./Images/Tpic4.jpg")
+            st.image(image7)
+        with newcol2:
+            image8 = Image.open("./Images/Tpic5.jpg")
+            st.image(image8)
+            image9 = Image.open("./Images/Tpic6.JPG")
+            st.image(image9)
+            image10 = Image.open("./Images/Tpic7.JPG")
+            st.image(image10)
+            image11 = Image.open("./Images/Tpic8.JPG")
+            st.image(image11)
+        with newcol3:
+            image12 = Image.open("./Images/Tpic9.JPG")
+            st.image(image12)
+            image13 = Image.open("./Images/Tpic10.JPG")
+            st.image(image13)
+            file_ = open("./Images/Tgif1.gif", "rb")
+            contents = file_.read()
+            data_url = base64.b64encode(contents).decode("utf-8")
+            file_.close()
+            st.markdown(
+                f'<img src="data:image/gif;base64,{data_url}" alt="">',
+                unsafe_allow_html=True,
+            )
+            file_ = open("./Images/Tgif2.gif", "rb")
+            contents = file_.read()
+            data_url = base64.b64encode(contents).decode("utf-8")
+            file_.close()
+            st.markdown(
+                f'<img src="data:image/gif;base64,{data_url}" alt="">',
+                unsafe_allow_html=True,
+            )
+        return ""
     else:
         return "Words of Affirmation picked!"
 

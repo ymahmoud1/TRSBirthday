@@ -166,6 +166,24 @@ def picklovelanguage(X:str):
                                   "The prettiest girl ever, and shes mine."]
                 statement = random.choice(list_sexywords)
                 st.write(statement +" <3")
+        with rcol:
+            st.markdown("If you need a reminder of who you really are and what you mean to me, use this button:")
+            talas_button = st.button("TRS")
+            if talas_button:
+                list_oftala = ["I love you so much Tala Sater.", "I cannot wait to put a ring on that finge.r",
+                               "Through thick and thin, I'll always be there to love you.", "Our bond is so deep, I've never felt this with anyone else."
+                               "I'm so comfortable around you my darling", "You're no black cat, your the most golden of golden retrievers",
+                               "You're the most genuine person I know", "You are so clean and pure, I love it and you should too",
+                               "My girl is on her deen, she's perfect balance of deen and dunya", "My thoughtful little bug, little ms romance."
+                               "You're the girliest of girls and I love it.", "The most beautiful sole on planet Earth.", "Your heart is like no other, with its care, courage, and love."
+                               "You are the most perfect girlfriend ever., I love you", "I love you endlessly.", "I will never stop loving you.", "My gym goer, yoga teacher girlfriend.",
+                               "I cant wait to travel the world with you.", "I cant wait to build a future with you.",
+                               "My darling you've got the most beautiful hair, eyes, nose, lips, ears, everything.", "Pink is your color, don't you forget it.",
+                               "My little sexy librarian, ope wrong button sorry.", "My intelligent young woman.", "You mean the world to me.", "You are my whole world, and universe."
+                               "You are my strong baby, strongest woman out there", "My funny bitch", "Who knew someone so amazing could be packed in a tiny 5'2 Woman.",
+                               "Mako A7la minitch bil 7aya", "You're crazy, and I love crazy.", "My princess with a disorder.", "There is no soul kinder than yours.",
+                               "My favorite girl.", "My sweet, lovely girlfriend.", "You're the love of my life.", "You are mine forever.", "My little squish."]
+
         return ""
 
 def category(X: int):
@@ -203,7 +221,7 @@ if __name__ == "__main__":
 
     #Love Languages
     elif navigation == "Love Languages":
-        st.title("What Type of Love Do you Want Right Now?")
+        st.title("What Type of Love Do You Want Right Now?")
         language = st.selectbox("**Pick whichever you want and I will provide :)**",
                      ["Act of Service","Quality Time","Gifts","Physical Touch","Words of Affirmation"])
         st.markdown(picklovelanguage(language))

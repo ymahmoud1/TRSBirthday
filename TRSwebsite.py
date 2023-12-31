@@ -167,6 +167,14 @@ def picklovelanguage(X:str):
                                   "The prettiest girl ever, and shes mine."]
                 statement = random.choice(list_sexywords)
                 st.write(statement +" <3")
+                file_ = open("./Images/catgif.gif", "rb")
+                contents = file_.read()
+                data_url = base64.b64encode(contents).decode("utf-8")
+                file_.close()
+                st.markdown(
+                    f'<img src="data:image/gif;base64,{data_url}" alt="">',
+                    unsafe_allow_html=True,
+                )
         with rcol:
             st.markdown("If you need a reminder of who you really are and what you mean to me, use this button:")
             talas_button = st.button("TRS")

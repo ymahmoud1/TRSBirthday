@@ -8,7 +8,10 @@ def welcomemessage() -> str:
                "I debated long and hard on what to do for your special 18th birthday and I've come to the consensus of\n " \
                "sending you multiple gifts because I love you and I can't only send one gift to the person I love the most in my life which is you.\n " \
                "So, for one of your gifts, I've decided to make you your special own website with many different features that\n " \
-               "I hope you will enjoy exploring. Here is a brief of summary of all the different features on this website: ...\n " \
+               "I hope you will enjoy exploring.  \n Here is a brief of summary of all the different features on this website:  \n " \
+               "1. Love Letters: With the help of your amazing best friend Zeina, I've compiled love letters from your friends wishing you a happy birthday and more.  \n" \
+               "2. Love Lanugages: Being in a long distance relationship can get tough sometimes, so I decided to give you all the types of love available at your fingertips." \
+               "3. Attention Button: If you ever want some attention randomly, press the button and it will notify my phone straight away.  \n" \
                "That's all for now baby, I wish I could be with you on your special day, celebrating you, but trust me I will only\n " \
                "be thinking of how grateful I am of you for the whole duration of my journey back to the USA and for all the motnhs\n " \
                "I will be spending there until I can be blessed by being near your presence again in the summer. I love you, appreciate you,\n " \

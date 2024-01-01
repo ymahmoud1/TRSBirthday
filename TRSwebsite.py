@@ -25,7 +25,7 @@ def lovelanguagesmessage() -> str:
 
 def picklovelanguage(X:str):
     if X == "":
-        st.markdown("")
+        st.markdown("**None Picked!**")
     elif X == "Act of Service":
         st.markdown("**Acts of Service picked!**")
         st.markdown("Acts of service along with physical touch are probably the two hardest love languages to show through long distance, but ones that I enjoy giving you the most of.  \n"
@@ -246,7 +246,7 @@ if __name__ == "__main__":
         st.title("Letters From Your Loved Ones")
         letter = st.selectbox("**Whose love/birthday letter would you like to read?**", ["", "Yazan", "Zeina", "Haya", "Liana", "Takwa", "Hend"])
         if letter == "":
-            st.markdown("")
+            st.markdown("**None Picked!**")
         elif letter == "Yazan":
             st.markdown("")
         elif letter == "Zeina":

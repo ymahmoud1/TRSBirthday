@@ -224,7 +224,7 @@ if __name__ == "__main__":
                                       ("Home", "Love Letters", "Love Languages",
                                        "Attention Button"))
     st.sidebar.markdown("Daily Reminder: I LOVE YOU ❤️❤️❤️️")
-    file_ = open("./Images/birthday.gif", "rb")
+    file_ = open("./Images/Birthday.gif", "rb")
     contents = file_.read()
     data_url = base64.b64encode(contents).decode("utf-8")
     file_.close()

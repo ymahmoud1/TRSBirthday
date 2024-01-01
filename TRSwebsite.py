@@ -24,7 +24,9 @@ def lovelanguagesmessage() -> str:
     return print(message)
 
 def picklovelanguage(X:str):
-    if X == "Act of Service":
+    if X == "":
+        st.markdown("")
+    elif X == "Act of Service":
         st.markdown("**Acts of Service picked!**")
         st.markdown("Acts of service along with physical touch are probably the two hardest love languages to show through long distance, but ones that I enjoy giving you the most of.  \n"
                     "I want to do anything possible to make your life easier, whether it is to put your socks on, tie your shoe laces for you, give you a massage for your neck, right shoulder and back after sa long day, etc.  \n"
@@ -242,8 +244,10 @@ if __name__ == "__main__":
     #Love Letters
     elif navigation == "Love Letters":
         st.title("Letters From Your Loved Ones")
-        letter = st.selectbox("**Whose love/birthday letter would you like to read?**", ["Yazan", "Zeina", "Haya", "Liana", "Takwa", "Hend"])
-        if letter == "Yazan":
+        letter = st.selectbox("**Whose love/birthday letter would you like to read?**", ["", "Yazan", "Zeina", "Haya", "Liana", "Takwa", "Hend"])
+        if letter == "":
+            st.markdown("")
+        elif letter == "Yazan":
             st.markdown("")
         elif letter == "Zeina":
             st.markdown("Happiest birthday to my other half, my sister, and my best friend. You have never let me down and have always been there for me—my backbone, fr."
@@ -289,7 +293,7 @@ if __name__ == "__main__":
     elif navigation == "Love Languages":
         st.title("What Type of Love Do You Want Right Now?")
         language = st.selectbox("**Pick whichever you want and I will provide :)**",
-                     ["Act of Service","Quality Time","Gifts","Physical Touch","Words of Affirmation"])
+                     ["", "Act of Service","Quality Time","Gifts","Physical Touch","Words of Affirmation"])
         st.markdown(picklovelanguage(language))
 
     #Attention Button

@@ -242,7 +242,48 @@ if __name__ == "__main__":
     #Love Letters
     elif navigation == "Love Letters":
         st.title("Letters From Your Loved Ones")
-        letter = st.selectbox("**Whose love/birthday letter would you like to read?**", ["Yazan", "Zeina", "Haya", "Yasemine"])
+        letter = st.selectbox("**Whose love/birthday letter would you like to read?**", ["Yazan", "Zeina", "Haya", "Liana", "Takwa", "Hend"])
+        if letter == "Yazan":
+            st.markdown("")
+        elif letter == "Zeina":
+            st.markdown("Happiest birthday to my other half, my sister, and my best friend. You have never let me down and have always been there for me—my backbone, fr."
+                        " Thank you for being such a supportive person no matter what you're going through. You're such a charismatic, bubbly person to be around. "
+                        "Genuinely, I have experienced the funniest, most wholesome memories I could ever have in my teenage years. "
+                        "Whether through monkey or hitting the gym, you never failed to make me laugh. We've encountered the weirdest people and scenarios; our kids will be entertained."
+                        " TMI was never a thing for us; we genuinely have no filter around each other. Tb to the sanfoor, A and MA days, idk what we were thinking. "
+                        "I am so glad that we got closer in these past years. Also, I am grateful that I came to Dubai; I genuinely never imagined being this close to someone who is not blood. "
+                        "You’re my soulmate as a friend. I am thankful that I have met someone so empowering like you, such an influential person."
+                        " You're one of the strongest, smartest, and most hardworking people I have met. I learn so much from you and I love it when you yap about neurons and psychology."
+                        " I love how we are so comfortable around each other. My fat ahh twin. You're truly my sister. Inshallah, our kids become besties like us (ngl, they have no choice). "
+                        "Inshallah we stay besties till we are 90. Inshallah we stay this close during Uni (it's so sad that we won’t get to see each other everyday)"
+                        "  Inshallah exams go AMAAAAZING and your uni experience goes AMAAAAZING. My A* queen. My neurosurgeon. My Cambridge queen. "
+                        "May God bless you with greatness, inshallah. This is your year; inshallah, all your dreams, aspirations, and wishes come true."
+                        " I love you so so much. Yala get your license asap so we can make it out of silicon. BIG 18🥳🥳.")
+        elif letter == "Haya":
+            st.markdown("I don’t even know where to begin with this. You are my favourite person, and you have a place no one can have in my heart. "
+                        "You are a genuine and kind-hearted person who has seen so much not only this year but also since Ms Rida in year 4. "
+                        "How you deal with issues inspires me, and I’m so proud of the woman you became. I’m so grateful that I could be a part of your journey and share such unforgettable memories."
+                        " Dealing with shitty bfs and how you never got bored of my rants and made it 10x more funny. Always supporting my delusions and never judging me, and shaving and waxing together (I know Yazan is disturbed if he’s reading this)."
+                        " Fighting in IMG, then sleeping right next to you like nothing happened. London together and that shitty shawarma shop while we stressed about gcse together. "
+                        "Coming to your house every single Thursday after school like it was mine. Leo will forever hate me, and mimi2006 is engraved in my head."
+                        " We can never forget when you walked from DESC to WSO, and we didn’t even have a plan. I can go for hours, but those were my favourites. "
+                        "We always shared such similar viewpoints and never ever got distant, no matter how far we were, and I’ll forever cherish you for that. "
+                        "I am never worried about telling you something, and I know how comfortable you are doing the same, and that’s what I love about us. "
+                        "No matter what, wrong or right, I’ll always have your back, and I know you will have mine. I can’t wait for us to reunite and travel the world, hayati, you deserve the best year this year, and I’m so glad you found the man to set this all up and to help you achieve that."
+                        " You deserve all the good things coming your way. Keep your head high, and I love you endlessly. Happy 18 my beautiful girl. ")
+        elif letter == "Liana":
+            st.markdown("Happiest birthday talaaa I love u so so much. I hope this year treats you very well Inshallah and u achieve all ur hopes and dreams like you deserve."
+                        " Besttt of luck on this new chapter of ur life and enjoy ur day to the maxxxx (get ur license as well pls). Love you and happy 18th!!!❤️❤️❤️❤️❤️")
+        elif letter == "Takwa":
+            st.markdown("Happiest birthday hayati I love you so so much and I hope you have an amazing day. I’m so happy that I have you in my life and I appreciate you so much."
+                        " You’re so smart, thoughtful and kind and I wish you nothing but the best."
+                        " It’s been so amazing to see you grow throughout all these years and im forever grateful for you. "
+                        "Thank you for always being the best friend anyone could ask for and for always being there for me. "
+                        "This is shwaya gay but I love you endlessly my zifta and I cant wait to continue making more memories with you. "
+                        "P.s. like 5 years later and I’m still so sorry about the milk cake 🤭🤭🤭")
+        elif letter == "Hend":
+            st.markdown("Happy birthday Tala!! I hope you have an amazing day today <33 ilysm and I hope to be as good of a friend to you as you are to me 🤍🤍")
+
 
     #Love Languages
     elif navigation == "Love Languages":

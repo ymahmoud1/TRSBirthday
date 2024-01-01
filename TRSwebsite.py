@@ -10,7 +10,7 @@ def welcomemessage() -> str:
                "So, for one of your gifts, I've decided to make you your special own website with many different features that\n " \
                "I hope you will enjoy exploring.  \n Here is a brief of summary of all the different features on this website:  \n " \
                "1. Love Letters: With the help of your amazing best friend Zeina, I've compiled love letters from your friends wishing you a happy birthday and more.  \n" \
-               "2. Love Lanugages: Being in a long distance relationship can get tough sometimes, so I decided to give you all the types of love available at your fingertips." \
+               "2. Love Lanugages: Being in a long distance relationship can get tough sometimes, so I decided to give you all the types of love available at your fingertips.  \n" \
                "3. Attention Button: If you ever want some attention randomly, press the button and it will notify my phone straight away.  \n" \
                "That's all for now baby, I wish I could be with you on your special day, celebrating you, but trust me I will only\n " \
                "be thinking of how grateful I am of you for the whole duration of my journey back to the USA and for all the motnhs\n " \
@@ -224,11 +224,27 @@ if __name__ == "__main__":
                                       ("Home", "Love Letters", "Love Languages",
                                        "Attention Button"))
     st.sidebar.markdown("Daily Reminder: I LOVE YOU ❤️❤️❤️️")
+    file_ = open("./Images/birthday.gif", "rb")
+    contents = file_.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_.close()
+    st.markdown(
+        f'<img src="data:image/gif;base64,{data_url}" alt="">',
+        unsafe_allow_html=True,
+    )
 
     #Home page
     if navigation == "Home":
         st.title("Happy 18th Birthday My Little Bug")
         st.markdown(welcomemessage())
+        file_ = open("./Images/hearts.gif", "rb")
+        contents = file_.read()
+        data_url = base64.b64encode(contents).decode("utf-8")
+        file_.close()
+        st.markdown(
+            f'<img src="data:image/gif;base64,{data_url}" alt="">',
+            unsafe_allow_html=True,
+        )
 
     #Love Letters
     elif navigation == "Love Letters":

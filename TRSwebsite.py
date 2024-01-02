@@ -248,7 +248,7 @@ if __name__ == "__main__":
         if letter == "":
             st.markdown("**None Picked!**")
         elif letter == "Yazan":
-            st.markdown("Okay, galbi, this is going to get sappy, so prepare yourself. It is finally time for someone to write for the writer. \n"
+            st.markdown("Okay, galbi, this is going to get sappy, so prepare yourself. It is finally time for someone to write for the writer.  \n"
                         "Tala Raed Sater. My princess, my baby, my beautiful little bug, and my everything. Where do I start? "
                         "This whole letter is going to be riddled with grammar mistakes, punctuation errors, and more, so I am sorry,"
                         " but I will use Grammarly to ease your pain while reading this.  \n"

@@ -25,7 +25,7 @@ def lovelanguagesmessage() -> str:
 
 def picklovelanguage(X:str):
     if X == "":
-        st.markdown("**None Picked!**")
+        return "**None Picked!**"
     elif X == "Act of Service":
         st.markdown("**Acts of Service picked!**")
         st.markdown("Acts of service along with physical touch are probably the two hardest love languages to show through long distance, but ones that I enjoy giving you the most of.  \n"

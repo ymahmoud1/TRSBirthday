@@ -226,7 +226,7 @@ if __name__ == "__main__":
 
     #Home page
     if navigation == "Home":
-        st.title("Happy 18th Birthday My Little Bug")
+        st.title("Happy 18th Birthday My Little Bug ❤")
         st.markdown(welcomemessage())
         st.markdown("That's all for now baby, I wish I could be with you on your special day, celebrating you, but trust me I will only\n " \
                "be thinking of how grateful I am of you for the whole duration of my journey back to the USA and for all the motnhs\n " \
@@ -263,6 +263,17 @@ if __name__ == "__main__":
                         "  Inshallah exams go AMAAAAZING and your uni experience goes AMAAAAZING. My A* queen. My neurosurgeon. My Cambridge queen. "
                         "May God bless you with greatness, inshallah. This is your year; inshallah, all your dreams, aspirations, and wishes come true."
                         " I love you so so much. Yala get your license asap so we can make it out of silicon. BIG 18🥳🥳.")
+            oCol, tCol,thCol = st.columns([1,1,1])
+            with oCol:
+                image20 = Image.open("./Images/Z1.JPG")
+                st.image(image20)
+            with tCol:
+                image21 = Image.open("./Images/Z2.JPG")
+                st.image(image21)
+            with thCol:
+                image22 = Image.open("./Images/Z3.JPG")
+                st.image(image22)
+
         elif letter == "Haya":
             st.markdown("I don’t even know where to begin with this. You are my favourite person, and you have a place no one can have in my heart. "
                         "You are a genuine and kind-hearted person who has seen so much not only this year but also since Ms Rida in year 4. "
@@ -275,6 +286,14 @@ if __name__ == "__main__":
                         "I am never worried about telling you something, and I know how comfortable you are doing the same, and that’s what I love about us. "
                         "No matter what, wrong or right, I’ll always have your back, and I know you will have mine. I can’t wait for us to reunite and travel the world, hayati, you deserve the best year this year, and I’m so glad you found the man to set this all up and to help you achieve that."
                         " You deserve all the good things coming your way. Keep your head high, and I love you endlessly. Happy 18 my beautiful girl. ")
+            oneCol, twoCol = st.columns([1, 1])
+            with oneCol:
+                image22 = Image.open("./Images/H1.JPG")
+                st.image(image22)
+            with twoCol:
+                image23 = Image.open("./Images/H2.JPG")
+                st.image(image23)
+
         elif letter == "Liana":
             st.markdown("Happiest birthday talaaa I love u so so much. I hope this year treats you very well Inshallah and u achieve all ur hopes and dreams like you deserve."
                         " Besttt of luck on this new chapter of ur life and enjoy ur day to the maxxxx (get ur license as well pls). Love you and happy 18th!!!❤️❤️❤️❤️❤️")

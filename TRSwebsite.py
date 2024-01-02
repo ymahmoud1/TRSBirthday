@@ -248,7 +248,36 @@ if __name__ == "__main__":
         if letter == "":
             st.markdown("**None Picked!**")
         elif letter == "Yazan":
-            st.markdown("")
+            st.markdown("Okay, galbi, this is going to get sappy, so prepare yourself. It is finally time for someone to write for the writer. "
+                        "Tala Raed Sater. My princess, my baby, my beautiful little bug, and my everything. Where do I start? "
+                        "This whole letter is going to be riddled with grammar mistakes, punctuation errors, and more, so I am sorry,"
+                        " but I will use Grammarly to ease your pain while reading this.  \n"
+                        "Tala, you have been a shining beacon of light in my world for the last year."
+                        " You know, it's crazy how we were only family friends who would barely talk to each other, and now have the most loving, comfortable, and perfect relationship that there is."
+                        " You might think my admiration of you started on that boat ride, but you would be wrong because I had always felt there was room to grow our friendship from before that night."
+                        " However, I think it is fair to say that we both did not expect to be where we currently are."
+                        " I’m not sure if you used some black magic, or made a deal with the devil, but ever since I laid my eyes on you that night at the boat, "
+                        "I knew what I wanted, hence me acting as if I knew who Freud was. I saw beauty, poise, intelligence, kindness, comedy, wifey material, submission kink,"
+                        " talent, passion, and most importantly, I saw life sparkle in your eyes, the way you moved and the way you talked. "
+                        "I’ve been mesmerized and completely infatuated with you ever since.  \n"
+                        "The past five months of my life have been extraordinary, remarkable, exceptional, sensational, and perfect, all thanks to you. "
+                        "Your presence is like no other, and I am so grateful, thankful, and lucky to have it with me. You motivate me to be who I want to be, "
+                        "you push me to my hardest, you lift me when I’m down, you make me laugh after I cry, you support me in my most difficult of times, "
+                        "and you love me wholeheartedly.  I want to give you all that you do and more. I want to be there to always support you in your"
+                        " successes and failures (ba3eed al shar), your ups and your downs. I want to be your source of stability,"
+                        " your source of comfort, your home. That is exactly what I will be 7ayati, because Tala I love you so much. "
+                        "I will not stop until I make sure that I fully take care of you financially, emotionally, and physically.  \n"
+                        "Every day with you is a new adventure, a new memory that I will forever cherish in my heart."
+                        " I cannot wait until we both get to fulfill our individual and shared dreams. I cannot wait for Thanksgiving next year, "
+                        "and the one after that, and the winter break, and all the trips we will make to various European and Asian countries inshallah.  \n"
+                        "No one in this world deserves to be celebrated as much as you for who they are. Tala, you’ve got the most beautiful soul that I have ever encountered."
+                        " You put so much care, so much thought, and so much love into everything you do, and it is something that I admire so highly. "
+                        "You deserve the world 7ayati.  And I will make sure to provide it for you. Baby, you’re 18. 18 years since the world started becoming a better"
+                        " place only because of your mere presence in it. I am so proud of everything you have achieved in those 18 years no matter how big or small,"
+                        " and I can’t wait to see what more you achieve this year and all the years after it. Galbi, Happy birthday, I hope you enjoy it to the maximum,"
+                        " have success like no other, happiness like never before, and have all your wishes and dreams come true. I love you to the moon and back 7bbti ❤❤❤"
+                        " (and I know you’ll say “only to the moon? 7mar”, and so my response to that: It’s a moon galaxy away from where we are.)")
+
         elif letter == "Zeina":
             st.markdown("Happiest birthday to my other half, my sister, and my best friend. You have never let me down and have always been there for me—my backbone, fr."
                         " Thank you for being such a supportive person no matter what you're going through. You're such a charismatic, bubbly person to be around. "

@@ -244,7 +244,7 @@ if __name__ == "__main__":
     #Love Letters
     elif navigation == "Love Letters":
         st.title("Letters From Your Loved Ones")
-        letter = st.selectbox("**Whose love/birthday letter would you like to read?**", ["", "Yazan", "Zeina", "Haya", "Liana", "Takwa", "Hend"])
+        letter = st.selectbox("**Whose love/birthday letter would you like to read?**", ["", "Yazan", "Zeina", "Haya", "Liana", "Takwa", "Hend","Yasemine","Tia", "Malak", "Mariam"])
         if letter == "":
             st.markdown("**None Picked!**")
         elif letter == "Yazan":
@@ -306,6 +306,26 @@ if __name__ == "__main__":
                         "P.s. like 5 years later and I’m still so sorry about the milk cake 🤭🤭🤭")
         elif letter == "Hend":
             st.markdown("Happy birthday Tala!! I hope you have an amazing day today <33 ilysm and I hope to be as good of a friend to you as you are to me 🤍🤍")
+        elif letter == "Yasemine":
+            st.markdown("My most beautiful girl 👩🏽‍❤‍👩🏽  \n"
+                        "SALAAM CUZZO !!!!!!!!!! Happiest of birthdays to my greatest blessing. I wish I was with you, enveloped in the worlds longest hug ever,"
+                        " however I am so happy to know your friends have put this together. May Allah bless this year for you, and provide for you in all the "
+                        "beautiful ways you deserve. You’re ethereal, incredibly intelligent and a force of a human i am in awe of <3 I could not be more honored "
+                        "to love you, and that is an honor anyone who has the privilege of is beyond blessed. Thank you for the constant source of love and support "
+                        "- may we forever be such a source for one another. Happy birthday my birthday girl (love me and mama)")
+        elif letter == "Tia":
+            st.markdown("happy birthday tala, you are the best friend anyone could ask for you truly mean the world to me "
+                        "i wish you the best for your 18th i hope you get the world because you truly deserve it.")
+        elif letter == "Malak":
+            st.markdown("happiest 18th tala! i love you so much. from being little 13 year olds in dubai mall shopping until our parents called us"
+                        " to stop abusing their card to being fully functioning 18 year old woman who still abuse their parents card. i am so happy to have"
+                        " you in my life and after all these years no matter how much we drift you will always be someone special to me. im so proud of the person"
+                        " you are and inshallah you continue to grow into the person you aspire to be. i wish you the best 18th and i look forward to all the memories"
+                        " we will make together in the future, all the gossip sessions we will have, the dressing up to dinners, ordering the entire menu, and ofcourse "
+                        "unnecessary shopping sprees!! HAPPY 18TH BABY")
+        elif letter == "Mariam":
+            st.markdown("TALAAA!! happy birthday ml, 18 is crazy. love you so much and so grateful to have you as a friend, hope you have the most amazing day and get the best flowers (don’t forget to email me sturt to ask when the next test is)")
+
 
 
     #Love Languages

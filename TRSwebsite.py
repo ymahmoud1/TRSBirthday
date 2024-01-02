@@ -276,7 +276,8 @@ if __name__ == "__main__":
                         " place only because of your mere presence in it. I am so proud of everything you have achieved in those 18 years no matter how big or small,"
                         " and I can’t wait to see what more you achieve this year and all the years after it. Galbi, Happy birthday, I hope you enjoy it to the maximum,"
                         " have success like no other, happiness like never before, and have all your wishes and dreams come true. I love you to the moon and back 7bbti ❤❤❤"
-                        " (and I know you’ll say “only to the moon? 7mar”, and so my response to that: It’s a moon galaxy away from where we are.)")
+                        " (and I know you’ll say “only to the moon? 7mar”, and so my response to that: It’s a moon galaxy away from where we are.)  \n\n"
+                        "P.S. Our pictures are on this website somewhere, so go and find them :)")
 
         elif letter == "Zeina":
             st.markdown("Happiest birthday to my other half, my sister, and my best friend. You have never let me down and have always been there for me—my backbone, fr."
